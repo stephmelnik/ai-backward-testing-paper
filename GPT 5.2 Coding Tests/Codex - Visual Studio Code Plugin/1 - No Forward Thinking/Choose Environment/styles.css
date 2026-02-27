@@ -1,0 +1,31 @@
+:root {
+  --paper: #f6eee8;
+  --paper-deep: #f3e6de;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 30% 20%, #faf4ef, var(--paper) 55%, var(--paper-deep) 100%);
+  color: #3a3340;
+  font-family: "Georgia", "Times New Roman", serif;
+}
+
+.page {
+  padding: 24px;
+}
+
+#flower {
+  width: min(90vmin, 768px);
+  height: min(90vmin, 768px);
+  display: block;
+  border-radius: 8px;
+  background: #f6eee8;
+  box-shadow: 0 18px 40px rgba(55, 40, 60, 0.12);
+}

@@ -1,0 +1,12 @@
+# Core
+numpy
+pillow
+tqdm
+
+# PyTorch (install the CUDA build appropriate for your system)
+torch
+torchvision
+
+# Optional (only needed if you want to experiment with extra CV features)
+opencv-python
+scikit-image
