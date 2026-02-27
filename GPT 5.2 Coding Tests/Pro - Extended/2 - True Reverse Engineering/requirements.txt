@@ -1,0 +1,7 @@
+# Install a CUDA-enabled build of PyTorch separately (see README).
+# This file lists the rest of the dependencies.
+
+numpy
+opencv-python
+pillow
+tqdm

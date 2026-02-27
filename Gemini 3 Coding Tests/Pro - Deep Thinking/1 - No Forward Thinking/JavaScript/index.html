@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procedural Flower Lines</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas"></canvas>
+        <div id="ui-panel">
+            <h1>Gumowski-Mira Flower</h1>
+            
+            <div class="control-group">
+                <label>Shape (&mu; parameter)</label>
+                <div class="slider-row">
+                    <input type="range" id="mu-slider" min="-0.8" max="-0.2" step="0.001" value="-0.496">
+                    <span id="mu-display">-0.496</span>
+                </div>
+                <p class="hint">Recommended: -0.496</p>
+            </div>
+
+            <div class="control-group">
+                <label>Detail Level</label>
+                <input type="range" id="detail-slider" min="50" max="300" step="10" value="150">
+            </div>
+
+            <button id="btn-render">Regenerate</button>
+        </div>
+    </div>
+    <script src="math.js"></script>
+    <script src="renderer.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
